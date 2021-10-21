@@ -10,5 +10,5 @@ int linearSearch(int arr[],int n,int k){ //o(n)
 }
 int main(){
     int arr[]={2,3,4,5};
-    cout<<linearSearch(arr,4,6);
+    cout<<linearSearch(arr,4,5);
 }
