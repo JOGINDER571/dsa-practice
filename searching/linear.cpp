@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int linearSearch(int arr[],int n,int k){ //o(n)
+int linearSearch(int arr[],int n,int k){  //o(n)
     for(int i=0;i<n;i++){
         if(arr[i]==k){
             return i;
