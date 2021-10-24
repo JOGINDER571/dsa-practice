@@ -111,6 +111,19 @@
      subst(ros,ans);
      subst(ros,ans+ch);
  }
+ // print all substring with ascii code
+ void subseq(string s,string ans){
+     if(s.length()==0){
+         cout<<ans<<endl;
+         return;
+     }
+     char ch=s[0];
+     int code =ch;
+     string ros=s.substr(1);
+     subseq(ros,ans);
+     subseq(ros,ans+ch);
+     subseq(ros,ans+to_string(code));
+ }
  int main(){
      int a[]={2,1,3,4,5,2};
     //  cout<<sorted(a,3);
@@ -125,5 +138,6 @@
     
     // cout<<removedup("aaaaed");
     // cout<<end_with_x("xxabxcxd");
-    subst("ABC","");
+    // subst("ABC","");
+    subseq("AB","");
  }
