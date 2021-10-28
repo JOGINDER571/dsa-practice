@@ -34,18 +34,18 @@ void merge(int arr[],int l,int mid,int r){
 void merge_sort(int arr[],int l,int r){
     if(l<r){
         int mid=(l+r)/2;
-        cout<<l<<r<<" ";
         merge_sort(arr,l,mid);
         merge_sort(arr,mid+1,r);
 
         merge(arr,l,mid,r);
 
     }
+    return;
 }
 int main(){
     int arr[]={3,4,2,1,5};
     merge_sort(arr,0,4);
-    for(int i=0;i<5;i++){
-        cout<<arr[i]<<" ";
-    }
+    // for(int i=0;i<5;i++){
+    //     cout<<arr[i]<<" ";
+    // }
 }

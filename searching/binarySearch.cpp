@@ -11,9 +11,6 @@ int binarySearch(int arr[],int l,int r,int k){ //o(logn)
             l=mid+1;
         }
     }
-    // if(k==arr[r]){
-    //     return r;
-    // }
     return -1;
 }
 
