@@ -102,6 +102,7 @@ class Minheap
             i=parent(i);
         }
     }
+    
 };
 int main()
 {
