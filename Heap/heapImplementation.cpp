@@ -90,6 +90,18 @@ class Minheap
         heapify(0);
         return root;
     }
+    void deletion(int i){
+        deletekey(i,INT8_MIN);
+        extractMin();
+    }
+    void deletekey(int i,int value){
+        harr[i]=value;
+        while (i!=0 && harr[i]<harr[parent(i)])
+        {
+            swap(harr[i],harr[parent(i)]);
+            i=parent(i);
+        }
+    }
 };
 int main()
 {
@@ -125,7 +137,7 @@ int main()
             obj.searchVal(value);
             break;
         case 3:
-            // obj.deletion()
+            obj.deletion(3);
             break;
         case 4:
             cout<<obj.getMin()<<endl;
@@ -134,7 +146,7 @@ int main()
             cout<<obj.extractMin();
             break;
         case 6:
-            
+            cout<<obj.height();
             break;
         case 7:
             obj.printarr();
