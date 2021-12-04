@@ -4,7 +4,7 @@
 #include<iostream>
 using namespace std;
 
-void bubbleSort(int arr[],int n){
+void insertionSort(int arr[],int n){
     for(int i=1;i<n;i++){
         int curr=arr[i];
         int j=i-1;
@@ -23,6 +23,6 @@ int main()
 {
     int arr[]={87,4,5,6,3,2,1};
     int n= 7;
-    bubbleSort(arr,n); 
+    insertionSort(arr,n); 
 
 }
