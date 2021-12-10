@@ -86,7 +86,7 @@
      node* head=NULL;
      insertAtEnd(head,1);
      insertAtEnd(head,2);
-     insertAtEnd(head,3);
+     insertAtEnd(head,3); 
      insertAtBeg(head,0);
      deleteData(head,3);
      printData(head);
